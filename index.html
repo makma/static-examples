@@ -8,10 +8,7 @@
   <body>
     <div class="container"></div>
     <script>
-      const vendorId =
-        window.fingerprintjs && window.fingerprintjs.vendorId
-          ? window.fingerprintjs.vendorId
-          : 'not-in-ios-context1'
+      const vendorId = window.fingerprintjs : 'not-in-ios-context'
 
       function initFingerprintJS() {
         // Initialize an agent at application startup.
